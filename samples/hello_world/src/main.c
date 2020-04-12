@@ -9,5 +9,11 @@
 
 void main(void)
 {
-	printk("Hello World! %s\n", CONFIG_BOARD);
+	unsigned long i = 0;
+	while (1) {
+		printk("Hello World! [%lu] %s\n", i, CONFIG_BOARD);
+		k_sleep(1000);
+		++i;
+	}
+
 }
