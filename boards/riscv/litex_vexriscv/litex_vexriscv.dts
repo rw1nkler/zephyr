@@ -34,34 +34,34 @@
 };
 
 &eth0 {
-	status = "okay";
+	status = "disabled";
 };
 
 &dna0 {
-	status = "okay";
+	status = "disabled";
 };
 
 &spi0 {
-	status = "okay";
+	status = "disabled";
 };
 
 &prbs0 {
-	status = "okay";
+	status = "disabled";
 };
 
 &i2c0 {
-	status = "okay";
+	status = "disabled";
 	label = "I2C_0";
 };
 
 &pwm0 {
-	status = "okay";
+	status = "disabled";
 };
 
 &gpio_out {
-	status = "okay";
+	status = "disabled";
 };
 
 &gpio_in {
-	status = "okay";
+	status = "disabled";
 };
