@@ -9,27 +9,15 @@
 
 void main(void)
 {
-
-	volatile int i;
-	volatile int j;
-
 	volatile unsigned int *reg = (unsigned int *) 0x82007800;
 	*reg = 1;
 
+	unsigned long i = 0;
 	while (1) {
-		for (int i = 0; i < 1000; ++i) {
-			j = i;
-		}
-
+		printk("Hello World! [%lu] %s\n", i, CONFIG_BOARD);
 		*reg ^= 1;
-    }
-
-	//unsigned long i = 0;
-	//while (1) {
-		//printk("Hello World! [%lu] %s\n", i, CONFIG_BOARD);
-	//	*reg ^= 1;
-	//	k_sleep(1000);
-	// ++i;
-//	}
+		k_sleep(1000);
+	 ++i;
+	}
 
 }

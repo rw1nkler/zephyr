@@ -35,11 +35,11 @@
 			reg-names = "irq_mask", "irq_pending";
 			riscv,max-priority = <7>;
 		};
-		uart0: serial@82004000 {
+		uart0: serial@82003800 {
 			compatible = "litex,uart0";
 			interrupt-parent = <&intc0>;
 			interrupts = <2 10>;
-			reg = <0x82004000 0x18>;
+			reg = <0x82003800 0x18>;
 			reg-names = "control";
 			label = "uart0";
 			status = "disabled";
@@ -55,11 +55,11 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 		};
-		timer0: serial@82003000 {
+		timer0: serial@82004000 {
 			compatible = "litex,timer0";
 			interrupt-parent = <&intc0>;
 			interrupts = <1 0>;
-			reg = <0x82003000 0x40>;
+			reg = <0x82004000 0x40>;
 			reg-names = "control";
 			label = "timer0";
 			status = "disabled";
